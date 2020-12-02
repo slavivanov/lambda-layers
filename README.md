@@ -29,7 +29,7 @@ Within bash, you can access `git` on the command line
 As an example, you can run the following command to publish a lambda layer for git. Be sure to set the AWS_PROFILE environment variable within the script before you run it
 
 ```bash
-./publish_layer.sh
+./publish_layer.sh git
 ```
 
 This zips up the folder created by install_layer.sh, and uploads it into a Lambda layer
