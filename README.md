@@ -34,6 +34,14 @@ As an example, you can run the following command to publish a lambda layer for g
 
 This zips up the folder created by install_layer.sh, and uploads it into a Lambda layer
 
+### abcmidi_to_layer.sh
+
+If your software is not available in the yumda yum repository, you can still install it if the rpm is available. Download the rpm file to /tmp and run this script.
+
+It leverages the awesome [fpm tool](https://fpm.readthedocs.io/en/latest/index.html) that converts the rpm to a regular zip file. You can then unzip and re-zip this to a format that is suitable for a lambda layer
+
+
+
 ### list.sh
 
 You can run this command to print a list of available yumda packages
